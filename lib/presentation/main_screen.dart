@@ -25,7 +25,7 @@ class SliverAppBarExample extends StatefulWidget {
 }
 
 class _SliverAppBarExampleState extends State<SliverAppBarExample> {
-  bool _pinned = true;
+  final bool _pinned = true;
 
 // [SliverAppBar]s are typically used in [CustomScrollView.slivers], which in
 // turn can be placed in a [Scaffold.body].
@@ -46,7 +46,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
             SliverAppBar(
               scrolledUnderElevation: 0,
               toolbarHeight: 48,
-              flexibleSpace: FlexibleSpaceBar(
+              flexibleSpace: const FlexibleSpaceBar(
                 titlePadding: EdgeInsetsDirectional.only(
                     start: 16, end: 16, top: 4, bottom: 4),
                 title: Row(
@@ -83,8 +83,8 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
             SliverToBoxAdapter(
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(
+                  const Padding(
+                    padding: EdgeInsets.only(
                         left: 16, right: 16, top: 8, bottom: 8),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -110,7 +110,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Row(
+                            const Row(
                               children: [
                                 Text(
                                   '7',
@@ -134,14 +134,14 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 4,
                             ),
                             Image.asset('assets/images/graph.png'),
                           ],
                         ),
                         Spacer(),
-                        Text(
+                        const Text(
                           '3',
                           style: TextStyle(
                               fontSize: 40,
@@ -149,17 +149,17 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                               color: Color(0xFF0C7A41),
                               height: 1),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
-                        Text(
+                        const Text(
                           '/10',
                           style: TextStyle(fontSize: 18),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           width: 4,
                         ),
-                        Column(
+                        const Column(
                           children: [
                             Icon(
                               Icons.star,
@@ -175,13 +175,13 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 24),
+                    padding: const EdgeInsets.only(top: 24),
                     child: Image.asset(
                       'assets/images/main_banner.png',
                       fit: BoxFit.cover,
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.only(
                         left: 16, right: 16, top: 24, bottom: 16),
                     child: Row(
@@ -222,7 +222,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                     width: 220,
                                     height: 147,
                                     decoration: ShapeDecoration(
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://cdn.foodnews.co.kr/news/photo/201305/45098_3381_4254.jpg"),
                                         fit: BoxFit.cover,
@@ -234,7 +234,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 8,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스엔 스타벅스 케...',
@@ -248,7 +248,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 4,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스의 특별한 순간을 스타벅스 케이크와 함께 하세요.',
@@ -274,7 +274,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                     width: 220,
                                     height: 147,
                                     decoration: ShapeDecoration(
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://sitem.ssgcdn.com/94/98/56/item/2097001569894_i1_750.jpg"),
                                         fit: BoxFit.cover,
@@ -286,7 +286,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 8,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스엔 스타벅스 케...',
@@ -300,7 +300,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 4,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스의 특별한 순간을 스타벅스 케이크와 함께 하세요.',
@@ -326,7 +326,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                     width: 220,
                                     height: 147,
                                     decoration: ShapeDecoration(
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://image.edaily.co.kr/images/Photo/files/NP/S/2019/11/PS19112800186.jpg"),
                                         fit: BoxFit.cover,
@@ -338,7 +338,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 8,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스엔 스타벅스 케...',
@@ -352,7 +352,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 4,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스의 특별한 순간을 스타벅스 케이크와 함께 하세요.',
@@ -378,7 +378,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                     width: 220,
                                     height: 147,
                                     decoration: ShapeDecoration(
-                                      image: DecorationImage(
+                                      image: const DecorationImage(
                                         image: NetworkImage(
                                             "https://cdn.news2day.co.kr/data2/content/image/2024/04/04/.cache/512/20240404500104.jpg"),
                                         fit: BoxFit.cover,
@@ -390,7 +390,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 8,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스엔 스타벅스 케...',
@@ -404,7 +404,7 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
                                 ),
                                 SizedBox(height: 4,),
                                 Container(
-                                  child: SizedBox(
+                                  child: const SizedBox(
                                     width: 220,
                                     child: Text(
                                       '크리스마스의 특별한 순간을 스타벅스 케이크와 함께 하세요.',
@@ -542,13 +542,13 @@ class _SliverAppBarExampleState extends State<SliverAppBarExample> {
         ),
       ),
       floatingActionButton: FloatingActionButton.extended(
-        backgroundColor: Color(0xFF0C7A41),
+        backgroundColor: const Color(0xFF0C7A41),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(40.0), // 원하는 radius 값 설정
         ),
         onPressed: () {  },
-        label: Text('Delivery', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),),
-        icon: Icon(Icons.delivery_dining, color: Colors.white,),
+        label: const Text('Delivery', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),),
+        icon: const Icon(Icons.delivery_dining, color: Colors.white,),
       ),
     );
   }
